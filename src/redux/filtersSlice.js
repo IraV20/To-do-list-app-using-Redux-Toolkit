@@ -7,10 +7,11 @@ const slice = createSlice({
   },
   reducers: {
     setStatusFilter(state, action){
-      return{
-        ...state,
-        status: action.payload,
-      }
+      state.status = action.payload
+      // return{
+      //   ...state,
+      //   status: action.payload,
+      // }
     }
   } 
 });
